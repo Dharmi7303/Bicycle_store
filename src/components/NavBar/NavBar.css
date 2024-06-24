@@ -1,0 +1,142 @@
+/* Styling for the logo image */
+.navbar {
+  padding: 0 20px;
+  border-bottom: 1px solid var(--primary-color); /* Replace #yourBorderColor with the color you want */
+  
+}
+
+.navbar-brand img {
+  max-width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+/* Style for active navigation link */
+.nav-link.active {
+  color: var(--primary-color); 
+  font-weight: bold; /* Make active link bold */
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+  color: var(--hover-color); /* Hover color, change as needed */
+}
+
+/* Style for the dropdown items */
+.nav-dropdown .dropdown-item {
+  color: #212529; /* Dropdown item text color */
+}
+
+.nav-dropdown .dropdown-item:hover {
+  background-color: var(--hover-color);
+}
+
+.cart-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+}
+
+.cart-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--accent-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 300px;
+  z-index: 1000;
+  display: none;
+  padding: 15px;
+}
+
+.cart-icon-container:hover .cart-dropdown {
+  display: block;
+}
+
+/* Style the cart items in the dropdown */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0; /* Added vertical padding for spacing between items */
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.delete-icon {
+  color: #ff6b6b;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  color: #ff0000;
+}
+
+/* Add this CSS rule to remove margin from ul elements within .navbar-nav */
+.navbar-nav ul {
+  margin: 0;
+}
+
+/* Styles for the primary-button class */
+.primary-button-nav {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  font-family: 'Heboo', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.primary-button-nav:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    color: initial; /* Or your default icon color */
+  }
+  40% {
+    transform: translateY(-20px) scale(1.5); /* Increase the scale for a bigger size */
+    color: var(--tertiary-color);
+  }
+  60% {
+    transform: translateY(-10px) scale(1.3); /* Slightly smaller scale than at 40% */
+    color: var(--hover-secondary);
+  }
+}
+
+.bounce {
+  animation: bounce 1s;
+  display: inline-block; /* Ensure transform applies correctly */
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 10px;
+    }
+
+  .navbar-brand img {
+    max-width: 80px; /* Smaller logo on mobile */
+  }
+
+  .cart-dropdown {
+    width: 100%; /* Full width for mobile */
+  }
+}
+

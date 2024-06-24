@@ -1,0 +1,30 @@
+/* src/components/FAQ/FAQ.css */
+.faq-container {
+  padding: 20px;
+}
+
+.faq-search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Removed .faq-item, .faq-question, and .faq-answer classes as they are not needed with React Bootstrap */
+
+.arrow-icon {
+  float: right;
+  transition: transform 0.3s;
+}
+
+.arrow-icon.up {
+  transform: rotate(180deg);
+}
+
+/* FAQ.css */
+
+/* Style for the accordion header when it is collapsed */
+.accordion-button:not(.collapsed) {
+  background-color: var(--secondary-color); /* Change to your desired color */
+}
+
+

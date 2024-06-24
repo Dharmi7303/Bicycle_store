@@ -1,0 +1,76 @@
+/* Styles for the hero container */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+}
+
+.hero-text-column, .hero-image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: left;
+  max-width: 100%; /* Ensure content doesn't overflow */
+}
+
+.hero-content {
+  text-align: left;
+}
+
+.hero-title {
+  color: var(--primary-color);
+  font-size: var(--font-size-xl);
+}
+
+.hero-subtitle {
+  color: var(--primary-color);
+  font-size: var(--font-size-l);
+}
+
+.promo-image {
+  max-width: 50%; /* Adjust as needed for responsiveness */
+  height: auto;
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+.hero-container .primary-button {
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Font weight */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+
+  /* Hover effect */
+  &:hover {
+    background-color: var(--hover-color); /* Darker shade for hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+
+}
+
+
+/* Responsive styles */
+  @media (max-width: 768px) {
+    .hero-text-column, .hero-image-column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .promo-image {
+      display: none;
+    }
+
+  .hero-button {
+    padding: 8px 16px;
+  }
+}

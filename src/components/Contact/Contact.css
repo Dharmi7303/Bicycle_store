@@ -1,0 +1,36 @@
+/* Contact.css */
+
+.contact-container {
+    max-width: 600px; /* Adjust width as needed */
+    margin: auto;
+    padding: 20px;
+    height: 900px;
+  }
+  
+  .contact-container h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+  }
+  
+  .form-group label {
+    color: var(--text-color); /* Adjust text color if needed */
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+  }
+  
+  .form-control:focus {
+    border-color: var(--primary-color); /* Highlight color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap's default focus shadow */
+  }
+  
+  .alert {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  
+  

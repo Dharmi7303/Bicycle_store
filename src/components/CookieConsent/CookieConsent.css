@@ -1,0 +1,27 @@
+/* CookieConsent.css */
+
+.cookie-consent-modal {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cookie-consent-modal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .cookie-consent-modal .modal-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .cookie-consent-modal .modal-body {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  
+  .cookie-consent-modal .modal-footer {
+    border-top: none;
+    padding-top: 10px;
+  }

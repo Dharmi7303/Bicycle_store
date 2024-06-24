@@ -1,0 +1,177 @@
+/* ... existing CSS ... */
+
+.banner-container {
+  width: 100%; /* Set the container to full width */
+}
+
+.container, .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.banner-container > *:last-child {
+  margin-bottom: 0;
+}
+
+.footer-container > *:first-child {
+  margin-top: 0;
+}
+
+.row {
+  margin-right: 0; /* Remove default right margin */
+  margin-left: 0; /* Remove default left margin */
+}
+
+
+.col {
+  padding: 0; /* Remove default padding */
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  /* Remove the width: 100%; line */
+}
+
+.left-banner {
+  background-color: var(--primary-color);
+}
+
+.right-banner {
+  background-color: var(--secondary-color);
+}
+
+.left-banner .banner-text h2 {
+  color: var(--secondary-color);
+}
+
+.left-banner .banner-text p {
+  color: var(--background-light);
+}
+
+.right-banner .banner-text h2 {
+  color: var(--primary-color);
+}
+
+.left-banner .banner-text p {
+  color: var(--background-light);
+}
+
+.left-banner .banner-text,
+.right-banner .image-banner {
+  order: 1; /* Text first in left banner, image first in right banner */
+}
+
+.left-banner .image-banner,
+.right-banner .banner-text {
+  order: 2;
+}
+
+.image-banner {
+  width: 400px; /* Adjust this value as needed */
+  height: 30px;
+  object-fit: contain;
+  margin-left: 20px; /* Add some space between image and text for left banner */
+}
+
+.right-banner .image-banner {
+  margin-left: 0;
+  margin-right: 20px; /* Add some space between image and text for right banner */
+}
+
+.app-button-image {
+  width: 150px;
+}
+
+.app-button-image:hover {
+  transform: scale(1.1) rotate(10deg); /* Scale up and rotate slightly on hover */
+}
+
+#banner-button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Font weight */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+
+  /* Hover effect */
+  &:hover {
+    background-color: var(--hover-color); /* Darker shade for hover */
+    color: var(--background-light);
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+
+}
+
+@media (max-width: 767px) { /* Bootstrap's breakpoint for small devices */
+  .banner-content {
+    flex-direction: column; /* Stack elements vertically on small devices */
+    text-align: center;
+    gap: 10px; /* Adjust gap for smaller screens */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .left-banner .banner-text,
+  .right-banner .image-banner {
+    order: 2; /* Image on top for left banner */
+  }
+
+  .left-banner .image-banner,
+  .right-banner .banner-text {
+    order: 1; /* Text on top for right banner */
+  }
+
+  .image-banner {
+    display: none;
+  }
+
+  .app-button-image {
+    width: 100px; /* Adjust width of app store buttons */
+  }
+}
+
+/* iPad in portrait mode */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles specific for iPad portrait mode */
+  .banner-content {
+    /* Adjustments for iPad portrait */
+    /* Example: */
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .image-banner {
+    /* Adjustments for iPad portrait */
+    /* Example: */
+    width: 50%; /* Adjust as needed */
+    height: auto;
+  }
+
+  /* Other styles as needed */
+}
+
+/* iPad in landscape mode */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  /* Styles specific for iPad landscape mode */
+  .banner-content {
+    /* Adjustments for iPad landscape */
+    /* Example: */
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .image-banner {
+    /* Adjustments for iPad landscape */
+    /* Example: */
+    width: 30%; /* Adjust as needed */
+    height: auto;
+  }
+}

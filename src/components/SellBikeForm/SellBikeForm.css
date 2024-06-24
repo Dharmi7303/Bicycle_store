@@ -1,0 +1,141 @@
+/* SellBikeForm.css */
+
+.sell-bike-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+.sell-bike-form h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+  }
+  
+.form-navigation {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+.form-navigation .btn {
+    min-width: 100px;
+  }
+  
+.input-icon {
+    color: var(--primary-color);
+    margin-right: 10px;
+  }
+
+.error-icon {
+  color: var(--delete-color);
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+.success-icon {
+  color: var(--hover-color);
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+.bar {
+  background-color: var(--tertiary-color);
+}  
+
+.progress-bar {
+  background-color: var(--hover-color);
+  border-radius: 10px;
+}
+
+/* Styles for the form navigation container */
+.form-navigation {
+  display: flex; /* Align buttons horizontally */
+  justify-content: space-between; /* Space out buttons */
+  margin-top: 20px; /* Space above the button container */
+}
+
+/* Styles for the secondary variant button */
+.secondary-button {
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  border: 2px solid var(--tertiary-color);
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  font-family: 'Heboo', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.secondary-button:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: 2px solid var(--tertiary-color);
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Styles for the primary-button class */
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  font-family: 'Heboo', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.primary-button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.primary-button:disabled {
+  background-color: var(--accent-color);
+  cursor: not-allowed; /* Cursor to indicate non-clickable */
+  color: var(--tertiary-color);
+}
+
+/* Media query for screens smaller than 768px (e.g., tablets and mobile devices) */
+@media (max-width: 768px) {
+  .sell-bike-form {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .sell-bike-form h1 {
+    font-size: var(--font-size-l); /* Adjust font size for smaller screens */
+  }
+
+  .form-navigation {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+  }
+
+  .form-navigation .btn {
+    width: 100%; /* Full width buttons */
+    margin-bottom: 10px; /* Space between stacked buttons */
+  }
+
+  .secondary-button,
+  .primary-button {
+    padding: 6px 10px; /* Slightly smaller padding */
+    font-size: var(--font-size-s); /* Smaller font size */
+  }
+}
+
+/* Media query for screens smaller than 480px (e.g., mobile devices) */
+@media (max-width: 480px) {
+  .sell-bike-form h1 {
+    font-size: var(--font-size-m); /* Further adjust font size for smaller screens */
+  }
+
+  .secondary-button,
+  .primary-button {
+    font-size: var(--font-size-xs); /* Even smaller font size */
+  }
+}

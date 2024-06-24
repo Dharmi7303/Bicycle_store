@@ -1,0 +1,126 @@
+/* Footer Container */
+.footer-container {
+  background-color: var(--tertiary-color); 
+  color: var(--text-color);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+/* Navigation Links */
+.footer-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-navigation li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-navigation a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footer-navigation a:hover {
+  text-decoration: none;
+  color: var(--background-light);
+}
+
+.footer-logo p {
+  color: var(--text-color);
+}
+
+/* Footer Logo */
+.footer-logo {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.footer-logo img {
+  max-width: 50%; /* Ensure logo is responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between logo and text */
+}
+
+/* Social Media Icons */
+.social-media h3, .app-store-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: 10px;
+  color: var(--text-color);
+}
+
+.social-icons a:hover {
+  color: var(--background-light);
+}
+
+.app-icons a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.app-icons img {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.app-icons img:hover {
+  transform: scale(1.1) rotate(10deg); /* Scale up and rotate slightly on hover */
+}
+
+/* For medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .footer-container {
+    padding: 40px 0;
+  }
+
+  .footer-logo img {
+    max-width: 60%;
+  }
+}
+
+/* For small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .footer-container {
+    padding: 20px 10px;
+  }
+
+  .footer-navigation ul,
+  .social-media,
+  .app-store-links {
+    text-align: center;
+  }
+
+  .footer-navigation li,
+  .social-icons a,
+  .app-icons a {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    text-align: center; /* Center align logo and text */
+  }
+
+  .footer-logo img {
+    max-width: 30%; /* Adjust the size of the logo if necessary */
+    display: inline-block; /* Make sure the logo respects text-align */
+    margin-bottom: 10px; /* Space between logo and text */
+  }
+
+  .app-icons img {
+    width: 150px; /* Adjust the width as needed */
+  }
+}

@@ -1,0 +1,107 @@
+/* ProductSearch styles */
+.product-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centered with auto margins */
+  max-width: 100%; /* Responsive max width */
+  background-color: var(--tertiary-color);
+  padding: 20px 0;
+}
+
+.product-search input {
+  padding: 10px;
+  width: 100%; /* Make input width responsive */
+  max-width: 600px; /* Maximum width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Optional: Style for the focus state of the input */
+.product-search input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.error-message {
+  color: var(--delete-color);
+  margin-top: 10px;
+}
+
+.clear-search.animated {
+  transition: transform 0.3s ease;
+}
+
+.clear-search.animated:hover {
+  transform: scale(1.1);
+}
+
+.suggestions {
+  list-style: none;
+  margin-top: 10px;
+  /* Add additional styles for the dropdown */
+}
+
+.close-button {
+  padding: 10px; /* Same vertical padding as the input */
+  border: 1px solid var(--background-light); /* Same border thickness as the input */
+  border-radius: 4px; /* Same border-radius as the input */
+  font-size: 16px; /* Same font-size as the input */
+  box-sizing: border-box; /* Include padding and border in the button's total height */
+  height: auto; /* Auto height to adjust based on content and padding */
+  background-color: var(--text-color);
+  color: var(--background-light);
+  margin-left: 10px;
+}
+
+.product-count {
+  padding-left: 10px;
+  text-align: center; /* Center text */
+  margin-top: 20px;
+}
+
+.search-message {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.magnifying {
+  padding-right: 20px;
+  color: var(--background-light);
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .product-search {
+    padding: 15px 0; /* Adjust padding for smaller screens */
+    max-width: 100%; /* Use full width on very small screens */
+  }
+
+  .product-search input {
+    max-width: 300px;
+    padding: 10px; /* Adjust padding */
+    font-size: 14px; /* Smaller font size */
+    margin-bottom: 10px; /* Add space between elements */
+    margin-top: 10px; /* Add space between elements */
+  }
+
+  .product-search button {
+    padding: 10px 12px; /* Adjust button padding */
+    font-size: 14px; /* Smaller font size */
+  }
+  
+  .magnifying {
+    display: none; /* Hide the magnifying glass icon */
+  }
+
+  .close-button {
+    display: none; /* Hide the close button */
+  }
+}
+
+

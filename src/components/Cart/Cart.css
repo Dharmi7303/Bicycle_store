@@ -1,0 +1,127 @@
+.cart-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 500px; 
+}
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item-name {
+    font-weight: bold;
+  }
+  
+  .cart-item-price {
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  /* Additional styles for the form and buttons */
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border-radius: 0.25rem;
+  }
+  
+ /* Styles for the primary-button class */
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  font-family: 'Heboo', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.primary-button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.primary-button:disabled {
+  background-color: var(--accent-color);
+  cursor: not-allowed; /* Cursor to indicate non-clickable */
+  color: var(--tertiary-color);
+}
+
+/* Styles for the secondary variant button */
+.secondary-button {
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  border: 2px solid var(--tertiary-color);
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  font-family: 'Heboo', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.secondary-button:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: 2px solid var(--tertiary-color);
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Styles for the form navigation container */
+.navigation-buttons {
+  display: flex; /* Align buttons horizontally */
+  justify-content: space-between; /* Space out buttons */
+  margin-top: 20px; /* Space above the button container */
+}
+
+  .cart-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .cart-summary > div {
+    margin: 5px 0;
+  }
+  
+  /* Style for the total price to make it stand out */
+  .cart-summary div:last-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Optionally, you can add a border-top to separate the summary from the list of items */
+  .list-group-item:last-child .cart-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  
+  .error-message {
+    color: var(--delete-color);
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+  }
+  
+  .error-icon {
+    color: var(--delete-color);
+    margin: 10px 0 0 10px;
+    font-size: 2em;
+  }
+  
+  .success-icon {
+    color: var(--hover-color);
+    margin: 10px 0 0 10px;
+    font-size: 2em;
+  }

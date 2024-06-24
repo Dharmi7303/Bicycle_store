@@ -1,0 +1,117 @@
+/* Product styles */
+.product {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+  transition: transform 0.3s;
+  max-width: 100%; /* Ensure the product card doesn't exceed its container width */
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product h3 {
+  font-size: var(--font-size-l);
+}
+
+.product p {
+  font-size: var(--font-size-m);
+  margin: 10px 0;
+}
+
+.product button {
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  font-family: 'Heboo', sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.product button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.see-more-button {
+  text-decoration: none;
+  padding-left: 20px;
+  color: var(--primary-color);
+}
+
+.see-more-button:hover {
+  text-decoration: none;
+  padding-left: 20px;
+  color: var(--hover-color);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.icon-color {
+  color: var(--primary-color);
+}
+
+.product .price-text {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: var(--font-size-price);
+}
+
+.view-more-button {
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  font-size: var(--font-size-m);
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.view-more-button:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05); /* Slightly increase size on hover */
+  border: 2px solid var(--tertiary-color);
+}
+
+/* Add this to your App.css or a relevant CSS file */
+.product-info {
+  text-align: left;
+  margin-left: 40px;
+  margin-bottom: -30px;
+  font-size: var(--font-size-l);
+}
+
+.hide-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  font-size: var(--font-size-m);
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  border: 2px solid var(--tertiary-color);
+}
+
+.hide-button:hover {
+  background-color: var(--tertiary-color);
+  transform: scale(1.05); /* Slightly increase size on hover */
+}

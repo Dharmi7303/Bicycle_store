@@ -1,0 +1,121 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  --primary-color: #005354;
+  --hover-color: #1C756D;
+  --secondary-color: #E9FFB4;
+  --tertiary-color: #C18F72;
+  --accent-color: #ECDFD5;
+  --delete-color: #ff6b6b;
+  --text-color: #333;
+  --text-dark: #fefefe;
+  --background-light: #F9F4F2;
+  --font-size-xl: 2.5em; /* Slightly reduced for better proportion */
+  --font-size-l: 1.5em; /* Large but not overly dominant */
+  --font-size-m: 1em; /* Standard size for body text */
+  --font-size-price: 1em; /* Prominent for prices */
+  --font-size-s: 0.875em; /* Smaller for less important text */
+  --hover-secondary: #A46946;
+}
+
+/* Common styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Header styles */
+h1 {
+  font-size: var(--font-size-xl);
+  margin: 20px 0;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: var(--font-size-l);
+}
+
+h3 {
+  font-size: var(--font-size-m);
+}
+
+p {
+  font-size: var(--font-size-m);
+}
+
+.cart-message {
+  position: fixed;
+  top: 60px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050; /* Above most other elements */
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Font weight */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+
+  /* Hover effect */
+  &:hover {
+    background-color: var(--hover-color); /* Darker shade for hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+
+}
+
+
+/* Add a media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  /* Adjust your styles for smaller screens here */
+  body, html {
+    font-size: 16px; /* Increase the base font size for better readability on smaller screens */
+  }
+
+  h1 {
+    font-size: 2em; /* Adjust heading font size for mobile */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Adjust subheading font size for mobile */
+  }
+
+  p {
+    font-size: 1em; /* Adjust paragraph font size for mobile */
+  }
+
+  .cart-message {
+    top: 50px; /* Adjust the position of the cart message on smaller screens */
+  }
+
+  .primary-button {
+    padding: 8px 16px; /* Adjust button padding for mobile */
+    font-size: 0.875rem; /* Adjust button font size for mobile */
+  }
+}

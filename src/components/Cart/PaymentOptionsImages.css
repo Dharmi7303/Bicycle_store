@@ -1,0 +1,34 @@
+.payment-options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow the items to wrap */
+  }
+  
+  .payment-option-image {
+    width: 200px; /* Default width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0.5rem; /* Adds space around each image */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+    border: 2px solid var(--accent-color);
+  }
+
+  .payment-option-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  
+  @media (max-width: 768px) {
+    .payment-option-image {
+      width: 150px; /* Smaller width on medium devices */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .payment-option-image {
+      width: 100px; /* Even smaller width on small devices */
+    }
+  }
+  
+  .payment-option-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  }  
